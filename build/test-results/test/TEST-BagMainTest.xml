@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BagMainTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-01T17:54:05" hostname="LAPTOP-J6V6ET7P" time="0.013">
+  <properties/>
+  <testcase name="TestEnhanceBagsTrue" classname="BagMainTest" time="0.011"/>
+  <testcase name="TestCountCrossbodyStraps" classname="BagMainTest" time="0.001"/>
+  <testcase name="TestEnhanceBagsFalse" classname="BagMainTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

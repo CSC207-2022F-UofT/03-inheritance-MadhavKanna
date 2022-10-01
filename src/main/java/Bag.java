@@ -6,6 +6,7 @@
  */
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Bag {
     /*
@@ -18,7 +19,7 @@ public abstract class Bag {
     private String color;
     private int numberOfContents;
     private int capacity;
-    private ArrayList<String> contents;
+    private ArrayList<String> contents = new ArrayList<>(List.of());
 
 
 
@@ -36,6 +37,7 @@ public abstract class Bag {
         this.color = color;
         this.capacity = capacity;
         this.numberOfContents = 0;
+
     }
 
 
@@ -84,16 +86,16 @@ public abstract class Bag {
      *       and false otherwise.
      */
 
-    public boolean addItem(String item){
-        if (this.getNumberOfContents() < this.getCapacity()){
-            contents.add(item);
-            this.numberOfContents += 1;
-            return true;
-        } else {
-            return false;
-        }
+        public boolean addItem(String item){
+            if (this.getNumberOfContents() < this.getCapacity()){
+                contents.add(item);
+                this.numberOfContents += 1;
+                return true;
+            } else {
+                return false;
+            }
 
-    }
+        }
 
 
 
@@ -132,7 +134,7 @@ public abstract class Bag {
 //            newArray[i] = this.contents[i];
 //        }
 //        this.contents = newArray;
-        this.capacity = n;
+        this.capacity += n;
 
     }
 
